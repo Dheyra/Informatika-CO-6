@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika A</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Halaman kelas untuk materi, jadwal, dan tugas">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">Kelas &middot; Informatika A</div>
+            <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+            <nav id="main-nav" class="nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#syllabus">Silabus</a>
+                <a href="#schedule">Jadwal</a>
+                <a href="#assignments">Tugas</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <a class="cta" href="#assignments">Gabung Kelas</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Selamat datang di Kelas Informatika A</h1>
+                    <p class="muted">Website berisi materi, jadwal, dan tugas untuk Kelas Informatika A.</p>
+                    <div class="hero-cta" style="margin-top:1rem">
+                        <a class="btn btn-primary" href="#syllabus">Lihat Silabus</a>
+                        <a class="btn btn-outline" href="#assignments">Lihat Tugas</a>
+                    </div>
+                </div>
+                <aside class="card hero-card">
+                    <h3>Info Kelas</h3>
+                    <p class="muted">Kode: IF-101 • Pertemuan: Senin & Rabu • Dosen: PPPK Anindito, S.Kom., S.S., S.H., MTI., CHFI</p>
+                    <ul>
+                        <li>Durasi: 12 Minggu</li>
+                        <li>Format: Teori + Praktik</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <h2> Tentang Kelas</h2>
+            <p class="muted">Kelas ini membahas dasar-dasar pemrograman dan praktik proyek untuk persiapan UTS serta menunjang kemampuan Prajurit Kadet dalam Sistem Pemrograman.</p>
+        </section>
+
+        <section id="syllabus" class="section container">
+            <h2>Silabus Singkat</h2>
+            <div class="grid-cards">
+                <div class="card"><h3>Minggu 1-2</h3><p class="muted">Pengenalan, variabel, tipe data.</p></div>
+                <div class="card"><h3>Minggu 3-4</h3><p class="muted">Kontrol alur, perulangan, fungsi.</p></div>
+                <div class="card"><h3>Minggu 5-8</h3><p class="muted">Struktur data dasar dan Big Data.</p></div>
+                <div class="card"><h3>Minggu 9-12</h3><p class="muted">Proyek akhir dan presentasi.</p></div>
+            </div>
+        </section>
+
+        <section id="schedule" class="section container">
+            <h2>Jadwal</h2>
+            <table class="schedule">
+                <thead>
+                    <tr><th>Pertemuan</th><th>Topik</th><th>Waktu</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Pengenalan</td><td>Senin 10:00</td></tr>
+                    <tr><td>2</td><td>Variabel & Tipe</td><td>Rabu 10:00</td></tr>
+                    <tr><td>3</td><td>Kontrol Alur</td><td>Senin 10:00</td></tr>
+                    <tr><td>4</td><td>Perulangan</td><td>Rabu 10:00</td></tr>
+                    <tr><td>5</td><td>Fungsi</td><td>Senin 10:00</td></tr>
+                    <tr><td>6</td><td>Struktur Data Dasar</td><td>Rabu 10:00</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="announcements" class="section container">
+            <h2>Pengumuman</h2>
+            <ul class="announcements">
+                <li><strong>Ujian Tengah Semester:</strong> Dilaksanakan minggu ke-6. Persiapkan materi minggu 1-5.</li>
+                <li><strong>Pengumpulan Tugas 1:</strong> Batas akhir Jumat 23:59. Diekerjakan di sistem dummy dan Kirim via Google Classroom.</li>
+                <li><strong>Konsultasi:</strong> Office hour setiap Rabu 14:00-15:00 (Ruang Dosen Pengampu).</li>
+            </ul>
+        </section>
+
+        <section id="resources" class="section container">
+            <h2>Resources</h2>
+            <div class="grid-cards">
+                <div class="card"><h3>Syllabus (PDF)</h3><p class="muted">Unduh silabus lengkap dan rubrik penilaian.</p><p><a href="#" class="btn btn-outline">Download</a></p></div>
+                <div class="card"><h3>Slide Pertemuan</h3><p class="muted">Slide presentasi setiap minggu (link). </p><p><a href="#" class="btn btn-outline">Lihat Slides</a></p></div>
+                <div class="card"><h3>Repositori</h3><p class="muted">Contoh kode dan tugas pada GitHub.</p><p><a href="#" class="btn btn-outline">Buka Repo</a></p></div>
+            </div>
+        </section>
+
+        <!-- Students Swiper -->
+        <section id="students" class="section container">
+            <h2>Daftar Siswa</h2>
+            <div class="student-swiper">
+                <button class="swipe-btn prev-btn" aria-label="Previous student">←</button>
+                <div class="swipe-track">
+                    <ul class="student-list">
+                        <!-- 25 siswa -->
+                        <li class="student-card" data-index="0" data-name="Qayyum" data-email="siswa1@if.example" data-bio="Aktif di laboratorium A."><img src="https://i.pravatar.cc/150?img=1" alt="" class="avatar"><span class="name">Siswa 1</span></li>
+                        <li class="student-card" data-index="1" data-name="Abel" data-email="siswa2@if.example" data-bio="Anggota OSIS."><img src="https://i.pravatar.cc/150?img=2" alt="" class="avatar"><span class="name">Siswa 2</span></li>
+                        <li class="student-card" data-index="2" data-name="Dheyra" data-email="siswa3@if.example" data-bio="Gemar pemrograman web."><img src="https://i.pravatar.cc/150?img=3" alt="" class="avatar"><span class="name">Siswa 3</span></li>
+                        <li class="student-card" data-index="3" data-name="Anindya" data-email="siswa4@if.example" data-bio="Tim robotika."><img src="https://i.pravatar.cc/150?img=4" alt="" class="avatar"><span class="name">Siswa 4</span></li>
+                        <li class="student-card" data-index="4" data-name="Siswa 5" data-email="siswa5@if.example" data-bio="Penyuka desain UI."><img src="https://i.pravatar.cc/150?img=5" alt="" class="avatar"><span class="name">Siswa 5</span></li>
+                        <li class="student-card" data-index="5" data-name="Siswa 6" data-email="siswa6@if.example" data-bio="Berprestasi di matematika."><img src="https://i.pravatar.cc/150?img=6" alt="" class="avatar"><span class="name">Siswa 6</span></li>
+                        <li class="student-card" data-index="6" data-name="Siswa 7" data-email="siswa7@if.example" data-bio="Senang membuat game."><img src="https://i.pravatar.cc/150?img=7" alt="" class="avatar"><span class="name">Siswa 7</span></li>
+                        <li class="student-card" data-index="7" data-name="Siswa 8" data-email="siswa8@if.example" data-bio="Fokus jaringan komputer."><img src="https://i.pravatar.cc/150?img=8" alt="" class="avatar"><span class="name">Siswa 8</span></li>
+                        <li class="student-card" data-index="8" data-name="Siswa 9" data-email="siswa9@if.example" data-bio="Peminat AI."><img src="https://i.pravatar.cc/150?img=9" alt="" class="avatar"><span class="name">Siswa 9</span></li>
+                        <li class="student-card" data-index="9" data-name="Siswa 10" data-email="siswa10@if.example" data-bio="Aktif komunitas open-source."><img src="https://i.pravatar.cc/150?img=10" alt="" class="avatar"><span class="name">Siswa 10</span></li>
+                        <li class="student-card" data-index="10" data-name="Siswa 11" data-email="siswa11@if.example" data-bio="Pengembang backend."><img src="https://i.pravatar.cc/150?img=11" alt="" class="avatar"><span class="name">Siswa 11</span></li>
+                        <li class="student-card" data-index="11" data-name="Siswa 12" data-email="siswa12@if.example" data-bio="Minat keamanan siber."><img src="https://i.pravatar.cc/150?img=12" alt="" class="avatar"><span class="name">Siswa 12</span></li>
+                        <li class="student-card" data-index="12" data-name="Siswa 13" data-email="siswa13@if.example" data-bio="Ahli presentasi."><img src="https://i.pravatar.cc/150?img=13" alt="" class="avatar"><span class="name">Siswa 13</span></li>
+                        <li class="student-card" data-index="13" data-name="Siswa 14" data-email="siswa14@if.example" data-bio="Penggemar data science."><img src="https://i.pravatar.cc/150?img=14" alt="" class="avatar"><span class="name">Siswa 14</span></li>
+                        <li class="student-card" data-index="14" data-name="Siswa 15" data-email="siswa15@if.example" data-bio="Berjiwa kepemimpinan."><img src="https://i.pravatar.cc/150?img=15" alt="" class="avatar"><span class="name">Siswa 15</span></li>
+                        <li class="student-card" data-index="15" data-name="Siswa 16" data-email="siswa16@if.example" data-bio="Hobi fotografi."><img src="https://i.pravatar.cc/150?img=16" alt="" class="avatar"><span class="name">Siswa 16</span></li>
+                        <li class="student-card" data-index="16" data-name="Siswa 17" data-email="siswa17@if.example" data-bio="Aktif di klub coding."><img src="https://i.pravatar.cc/150?img=17" alt="" class="avatar"><span class="name">Siswa 17</span></li>
+                        <li class="student-card" data-index="17" data-name="Siswa 18" data-email="siswa18@if.example" data-bio="Suka kolaborasi proyek."><img src="https://i.pravatar.cc/150?img=18" alt="" class="avatar"><span class="name">Siswa 18</span></li>
+                        <li class="student-card" data-index="18" data-name="Siswa 19" data-email="siswa19@if.example" data-bio="Mahir debugging."><img src="https://i.pravatar.cc/150?img=19" alt="" class="avatar"><span class="name">Siswa 19</span></li>
+                        <li class="student-card" data-index="19" data-name="Siswa 20" data-email="siswa20@if.example" data-bio="Pemimpin tim proyek."><img src="https://i.pravatar.cc/150?img=20" alt="" class="avatar"><span class="name">Siswa 20</span></li>
+                        <li class="student-card" data-index="20" data-name="Siswa 21" data-email="siswa21@if.example" data-bio="Antusias belajar."><img src="https://i.pravatar.cc/150?img=21" alt="" class="avatar"><span class="name">Siswa 21</span></li>
+                        <li class="student-card" data-index="21" data-name="Siswa 22" data-email="siswa22@if.example" data-bio="Berprestasi akademik."><img src="https://i.pravatar.cc/150?img=22" alt="" class="avatar"><span class="name">Siswa 22</span></li>
+                        <li class="student-card" data-index="22" data-name="Siswa 23" data-email="siswa23@if.example" data-bio="Tertarik IoT."><img src="https://i.pravatar.cc/150?img=23" alt="" class="avatar"><span class="name">Siswa 23</span></li>
+                        <li class="student-card" data-index="23" data-name="Siswa 24" data-email="siswa24@if.example" data-bio="Peduli open-source."><img src="https://i.pravatar.cc/150?img=24" alt="" class="avatar"><span class="name">Siswa 24</span></li>
+                        <li class="student-card" data-index="24" data-name="Siswa 25" data-email="siswa25@if.example" data-bio="Menyukai algoritma."><img src="https://i.pravatar.cc/150?img=25" alt="" class="avatar"><span class="name">Siswa 25</span></li>
+                    </ul>
+                </div>
+                <button class="swipe-btn next-btn" aria-label="Next student">→</button>
+            </div>
+                        <div class="selected-row" style="display:flex;align-items:center;gap:0.75rem;margin-top:0.75rem">
+                            <p class="selected-info" id="selected-info">Geser untuk melihat siswa lainnya</p>
+                            <div style="display:flex;align-items:center;gap:0.5rem">
+                                <span id="position-indicator" class="position-indicator visually-hidden">1 / 25</span>
+                                <button id="view-profile-btn" class="btn btn-outline visually-hidden">Lihat Profil</button>
+                            </div>
+                        </div>
+
+            <aside id="student-profile" class="profile-panel visually-hidden" aria-live="polite">
+              <button id="close-profile" class="btn btn-outline" style="float:right">Tutup</button>
+              <div class="profile-inner">
+                <div class="profile-avatar"></div>
+                <div class="profile-body">
+                  <h3 id="profile-name">Nama Siswa</h3>
+                  <p id="profile-email" class="muted">email@example.com</p>
+                  <p id="profile-bio" class="muted">Bio singkat siswa akan muncul di sini.</p>
+                </div>
+              </div>
+            </aside>
+        </section>
+        <!-- Additional student details & video modal removed per request -->
+
+        <section id="assignments" class="section container">
+            <h2>Tugas</h2>
+            <ol>
+                <li>Latihan 1: Hello World dan input</li>
+                <li>Latihan 2: Perulangan dan kondisi</li>
+                <li>Latihan 3: Fungsi dasar</li>
+                <li>Latihan 4: Rekursi</li>
+                <li>Proyek mini: Kalkulator sederhana</li>
+            </ol>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Kontak</h2>
+            <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Form dikirim (demo)');">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <div style="margin-top:0.75rem"><button class="btn btn-primary" type="submit">Kirim</button></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div>© 2025 Prajurit Kadet (IF) Andheyra • Kelas IF-101</div>
+                <div class="muted">Follow: <a href="https://www.instagram.com/andheyranm/">Instagram</a> • <a href="#">GitHub</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js" defer></script>
+</body>
+</html>
